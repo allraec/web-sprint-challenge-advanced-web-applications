@@ -28,7 +28,7 @@ const Login = () => {
               console.log(res);
               localStorage.setItem("authToken", res.data.payload);
               setLoading(false);
-              history.push("/protected")
+              history.push("/bubbles")
           })
           .catch(err => {
               console.log(err)
